@@ -1,43 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Identity Verification</title>
+  <meta charset="UTF-8">
+  <title>Demo Verification</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="container">
+    <h1>Identity Verification</h1>
 
-<h1>Identity Verification</h1>
+    <p>
+      Please complete this form to verify your identity. All information is securely encrypted and will only be used for tax processing purposes.
+    </p>
 
-<p>
-Please complete this form to verify your identity. All information is securely encrypted and will only be used for tax processing purposes.
-</p>
+    <form>
+      <label>First Name</label>
+      <input type="text" placeholder="">
 
-<form>
+      <label>Last Name</label>
+      <input type="text" placeholder="">
 
-<label>First Name</label><br>
-<input type="text" placeholder=""><br><br>
+      <label>Email Address</label>
+      <input type="email" placeholder="example@email.com">
 
-<label>Last Name</label><br>
-<input type="text" placeholder=""><br><br>
+      <label>Phone Number</label><br>
+      <input type="text" placeholder="000-000-0000"><br><br>
 
-<label>Email</label><br>
-<input type="email" placeholder="example@email.com"><br><br>
+      <label>Social Security Number</label><br>
+      <input type="text" placeholder="000-00-0000"><br><br>
 
-<label>Phone Number</label><br>
-<input type="text" placeholder="000-000-0000"><br><br>
+      <div class="upload-section">
+        <div class="upload-box">
+          <span>ID Front</span>
+          <input type="file" accept="image/*">
+        </div>
 
-<label>Social Security Number</label><br>
-<input type="text" placeholder="000-00-0000"><br><br>
+        <div class="upload-box">
+          <span>ID Back</span>
+          <input type="file" accept="image/*">
+        </div>
+      </div>
 
-<button type="button">
-Submit Verification
-</button>
+      <button type="button">
+        Submit Verification
+      </button>
+    </form>
 
-
+    <p class="note">
+      This form does not submit or store any data.
+    </p>
+  </div>
 </body>
 </html>
